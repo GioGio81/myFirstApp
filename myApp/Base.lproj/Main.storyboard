@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,34 +15,56 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="myApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19E-wB-cWJ">
-                                <rect key="frame" x="143.5" y="323" width="88.5" height="21"/>
+                                <rect key="frame" x="162.66666666666666" y="357.66666666666669" width="88.666666666666657" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4H-VD-yqB">
-                                <rect key="frame" x="158" y="354" width="59" height="30"/>
+                                <rect key="frame" x="177.66666666666666" y="388.66666666666669" width="59" height="30"/>
                                 <state key="normal" title="Hit me :)"/>
                                 <connections>
                                     <action selector="buttonTabbed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s9H-Kp-t24"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M4H-dM-iR1">
+                                <rect key="frame" x="100" y="287" width="214" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vwE-LS-H0G">
+                                <rect key="frame" x="100" y="207" width="214" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="19E-wB-cWJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="39Y-33-R28"/>
+                            <constraint firstItem="19E-wB-cWJ" firstAttribute="top" secondItem="M4H-dM-iR1" secondAttribute="bottom" constant="40.666666666666686" id="5EQ-wb-BfH"/>
                             <constraint firstItem="G4H-VD-yqB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Wv-Ba-ei6"/>
                             <constraint firstItem="19E-wB-cWJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="69i-jF-1Zx"/>
+                            <constraint firstItem="M4H-dM-iR1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="WgR-SC-zRw"/>
+                            <constraint firstItem="M4H-dM-iR1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YwI-La-Qpo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vwE-LS-H0G" secondAttribute="trailing" constant="100" id="b06-5v-zWB"/>
+                            <constraint firstItem="M4H-dM-iR1" firstAttribute="top" secondItem="vwE-LS-H0G" secondAttribute="bottom" constant="50" id="fMk-WZ-e6d"/>
+                            <constraint firstItem="vwE-LS-H0G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="ftD-nt-5tV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M4H-dM-iR1" secondAttribute="trailing" constant="100" id="iFm-sp-Fio"/>
                             <constraint firstItem="G4H-VD-yqB" firstAttribute="top" secondItem="19E-wB-cWJ" secondAttribute="bottom" constant="10" id="iTU-vu-qKy"/>
+                            <constraint firstItem="vwE-LS-H0G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pHd-Uz-wgK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bottomTextField" destination="M4H-dM-iR1" id="koa-qu-iX4"/>
                         <outlet property="myLabel" destination="19E-wB-cWJ" id="UQW-NQ-xAq"/>
+                        <outlet property="topTextField" destination="vwE-LS-H0G" id="2fP-ik-jSV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

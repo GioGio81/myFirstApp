@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTabbed(_ sender: Any) {
         
-        buttonCount = buttonCount + 1
+        buttonCount += 1
         
         print(buttonCount)
         

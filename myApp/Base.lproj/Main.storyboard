@@ -43,6 +43,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Vg-SW-U6h">
+                                <rect key="frame" x="183" y="139" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -50,6 +53,8 @@
                             <constraint firstItem="19E-wB-cWJ" firstAttribute="top" secondItem="M4H-dM-iR1" secondAttribute="bottom" constant="40.666666666666686" id="5EQ-wb-BfH"/>
                             <constraint firstItem="G4H-VD-yqB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Wv-Ba-ei6"/>
                             <constraint firstItem="19E-wB-cWJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="69i-jF-1Zx"/>
+                            <constraint firstItem="5Vg-SW-U6h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F3J-WR-1MH"/>
+                            <constraint firstItem="vwE-LS-H0G" firstAttribute="top" secondItem="5Vg-SW-U6h" secondAttribute="bottom" constant="37" id="VIa-nP-OhY"/>
                             <constraint firstItem="M4H-dM-iR1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="WgR-SC-zRw"/>
                             <constraint firstItem="M4H-dM-iR1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YwI-La-Qpo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vwE-LS-H0G" secondAttribute="trailing" constant="100" id="b06-5v-zWB"/>
@@ -62,6 +67,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="5Vg-SW-U6h" id="PTu-4W-RlE"/>
                         <outlet property="bottomTextField" destination="M4H-dM-iR1" id="koa-qu-iX4"/>
                         <outlet property="myLabel" destination="19E-wB-cWJ" id="UQW-NQ-xAq"/>
                         <outlet property="topTextField" destination="vwE-LS-H0G" id="2fP-ik-jSV"/>

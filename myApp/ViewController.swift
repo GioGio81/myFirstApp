@@ -22,9 +22,9 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTabbed(_ sender: Any) {
         
-       var sum = topTextField.text! + bottomTextField.text!
+       let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
         
-        myLabel.text = sum
+        myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)s"
         
         /*
         buttonCount += 1
